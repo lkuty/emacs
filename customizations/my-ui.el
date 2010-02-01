@@ -1,5 +1,5 @@
 ;; color-theme
-(require 'color-theme)
+;(require 'color-theme)
 (color-theme-initialize)
 (color-theme-sitaramv-nt) ; Loading this first gives me yellow buffer names
 (color-theme-charcoal-black)
