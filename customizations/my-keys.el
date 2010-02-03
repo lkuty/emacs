@@ -27,9 +27,6 @@
 (global-set-key (kbd "M-s-<left>") 'previous-buffer)
 (global-set-key (kbd "M-s-<right>") 'next-buffer)
 
-(setq mac-option-modifier 'meta)
-(setq mac-command-modifier 'super)
-
 (global-set-key (kbd "s-<up>") 'beginning-of-buffer)
 (global-set-key (kbd "s-<down>") 'end-of-buffer)
 (global-set-key (kbd "s-<left>") 'move-beginning-of-line)

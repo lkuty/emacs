@@ -1,6 +1,8 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; Mac OS X specific stuff
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(setq mac-option-modifier 'meta)
+(setq mac-command-modifier 'super)
 
 ; delete files by moving them to the OS X trash
 (setq delete-by-moving-to-trash t)

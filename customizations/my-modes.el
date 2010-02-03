@@ -6,10 +6,10 @@
 ;;(setq swank-clojure-binary "/Users/ludo/bin/clj")
 ;;(setq
 ;; swank-clojure-jar-path "~/Applications/clojure/clojure/clojure.jar"
-(setq swank-clojure-extra-classpaths (list "~/Applications/clojure/clojure-contrib/clojure-contrib.jar"))
+(setq swank-clojure-extra-classpaths (list "~/.clojure/clojure_cp/clojure-contrib.jar"))
 
 ;;;;(println (seq (.getURLs (java.lang.ClassLoader/getSystemClassLoader))))
-(setq swank-clojure-jar-path "~/Applications/clojure/clojure/clojure.jar")
+(setq swank-clojure-jar-path "~/.clojure/clojure_cp/clojure.jar")
 ;; (setq swank-clojure-classpath (list "~/.clojure/clojure_cp/*.jar"))
 
 (require 'clojure-mode)
