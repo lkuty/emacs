@@ -22,6 +22,8 @@
 
 (global-set-key (kbd "C-x r v") 'list-register)
 
+;(global-set-key (kbd "DEL") 'delete-char)
+
 ;;;; buffer switching
 
 (global-set-key (kbd "M-s-<left>") 'previous-buffer)

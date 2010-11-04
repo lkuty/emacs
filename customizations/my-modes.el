@@ -1,23 +1,34 @@
 (add-to-list 'load-path "~/.emacs.d/vendor/slime")
-(add-to-list 'load-path "~/.emacs.d/vendor/slime/contrib")
+;(add-to-list 'load-path "~/.emacs.d/vendor/slime/contrib")
 (add-to-list 'load-path "~/.emacs.d/vendor/clojure-mode")
-(add-to-list 'load-path "~/.emacs.d/vendor/swank-clojure/src/emacs")
+;(add-to-list 'load-path "~/.emacs.d/vendor/swank-clojure")
+
+;(setq inferior-lisp-program "/opt/local/bin/sbcl")
+;(add-to-list 'slime-lisp-implementations '(sbcl ("sbcl")))
 
 ;;(setq swank-clojure-binary "/Users/ludo/bin/clj")
 ;;(setq
 ;; swank-clojure-jar-path "~/Applications/clojure/clojure/clojure.jar"
-(setq swank-clojure-extra-classpaths (list "~/.clojure/clojure_cp/clojure-contrib.jar"))
+;(setq swank-clojure-extra-classpaths (list "~/.clojure/clojure_cp/clojure-contrib.jar"))
 
 ;;;;(println (seq (.getURLs (java.lang.ClassLoader/getSystemClassLoader))))
-(setq swank-clojure-jar-path "~/.clojure/clojure_cp/clojure.jar")
-;; (setq swank-clojure-classpath (list "~/.clojure/clojure_cp/*.jar"))
+;(setq swank-clojure-jar-path "~/.clojure/clojure_cp/clojure.jar")
+
+;(setq swank-clojure-classpath (list "~/.clojure/clojure_cp/clojure.jar" "~/.clojure/clojure_cp/clojure-contrib.jar"))
+
+
+;(add-hook 'slime-repl-mode-hook 'clojure-mode-font-lock-setup)
+
+(require 'slime)
+
+;(slime-setup)
 
 (require 'clojure-mode)
 
-(require 'swank-clojure-autoload)
+;(require 'swank-clojure)
 
 ;;;; SLIME
-(require 'slime)
+;(require 'slime)
 
 (eval-after-load "slime" '(progn (slime-setup '(slime-repl))))
 
